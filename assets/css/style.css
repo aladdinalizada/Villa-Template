@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--text-color);
+}
+
+:root {
+  --orange: #f35525;
+  --text-color: #7a7a7a;
+  --border-color: #eee;
+  --black: #1e1e1e;
+}
+.active {
+  color: var(--orange);
+  font-size: 15px;
+}
+/* ZERO */
+.zero {
+  width: 100%;
+  height: 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 180px;
+}
+/* Zero Left */
+.zero .infos ul {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: 14px;
+}
+.zero .infos hr {
+  width: 1px;
+  height: 20px;
+  background-color: var(--border-color);
+}
+.zero .infos ul li i {
+  color: var(--orange);
+}
+/* Zero Right */
+
+.zero .social ul {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.zero .social ul li {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cdcdcd;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.zero .social ul li i {
+  color: #fff;
+}
+.zero .social ul li:hover {
+  background-color: var(--orange);
+  color: #fff;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 180px;
+}
+header .logo {
+  color: var(--black);
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header .navbar nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  transition: all 0.6s ease-in;
+}
+header .navbar nav ul li {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+}
+header .navbar nav ul li:hover {
+  color: var(--orange);
+}
+header .navbar nav ul .schedule {
+  font-size: 14px;
+  background-color: var(--black);
+  color: #fff;
+  border-radius: 20px;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+header .navbar nav ul .schedule i {
+  background-color: var(--orange);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  margin-left: -1px;
+  margin-right: 5px;
+  border-radius: 50%;
+  line-height: 35px;
+  transition: 1s;
+}
+header .navbar nav ul .schedule:hover {
+  color: var(--orange);
+}
+
+/* HERO */
+main .hero {
+  width: 100%;
+  height: 90vh;
+  background: url("https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/banner-01.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .hero .content {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .hero .content span {
+  background-color: #fff;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 15px;
+  text-transform: capitalize;
+  width: fit-content;
+}
+main .hero .content span em {
+  color: var(--orange);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  /* not italic */
+}
+main .hero .content h2 {
+  max-width: 360px;
+  font-size: 62px;
+  font-weight: 700;
+  color: white;
+  line-height: 72px;
+}
